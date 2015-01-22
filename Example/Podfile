@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'GUNAlert', :exclusive => true do
+  pod "GUNAlert", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "GUNAlert", :path => "../"
+
+  pod 'Specta', '~> 0.2.1'
+  pod 'Expecta'
+end

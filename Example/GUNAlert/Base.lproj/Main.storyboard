@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="GUNViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kqO-Ne-5e0">
+                                <rect key="frame" x="16" y="48.5" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="'Cancel' (First) Button Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dra-7W-xK8">
+                                <rect key="frame" x="16" y="20" width="203.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jts-68-XFA">
+                                <rect key="frame" x="16" y="115" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="'Ok' (Second) Button Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yn7-WQ-SaB">
+                                <rect key="frame" x="16" y="86.5" width="197.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KMZ-oI-3VV">
+                                <rect key="frame" x="16" y="181.5" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Third Button Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPm-yw-CYV">
+                                <rect key="frame" x="16" y="153" width="132" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2s-Qx-dD8">
+                                <rect key="frame" x="69" y="257.5" width="182" height="30"/>
+                                <state key="normal" title="Show 'Cancel' &amp; 'Ok' Alert">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showCancelOkAlertButtonTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JbB-GJ-XTf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rkq-Ds-42k">
+                                <rect key="frame" x="92" y="219.5" width="136" height="30"/>
+                                <state key="normal" title="Show 'Cancel' Alert">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showCancelAlertButtonTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LQw-YZ-sB8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVP-s9-VXb">
+                                <rect key="frame" x="95" y="295.5" width="130" height="30"/>
+                                <state key="normal" title="Show generic Alert">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showGenericAlertButtonTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XVs-tN-YAw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="I2s-Qx-dD8" firstAttribute="top" secondItem="Rkq-Ds-42k" secondAttribute="bottom" constant="8" id="0nv-pd-K7m"/>
+                            <constraint firstAttribute="centerX" secondItem="I2s-Qx-dD8" secondAttribute="centerX" id="1ka-NJ-20E"/>
+                            <constraint firstAttribute="trailing" secondItem="KMZ-oI-3VV" secondAttribute="trailing" constant="16" id="1r7-WC-bAy"/>
+                            <constraint firstAttribute="trailing" secondItem="Jts-68-XFA" secondAttribute="trailing" constant="16" id="52k-lN-rfZ"/>
+                            <constraint firstAttribute="centerX" secondItem="Rkq-Ds-42k" secondAttribute="centerX" id="9e6-nN-8wT"/>
+                            <constraint firstItem="Yn7-WQ-SaB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="9pq-Xq-GJs"/>
+                            <constraint firstAttribute="centerX" secondItem="nVP-s9-VXb" secondAttribute="centerX" id="AvU-3g-mg3"/>
+                            <constraint firstItem="lPm-yw-CYV" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="Cc5-uJ-1Ip"/>
+                            <constraint firstItem="Yn7-WQ-SaB" firstAttribute="top" secondItem="kqO-Ne-5e0" secondAttribute="bottom" constant="8" id="Esc-xT-Ix5"/>
+                            <constraint firstItem="kqO-Ne-5e0" firstAttribute="top" secondItem="dra-7W-xK8" secondAttribute="bottom" constant="8" id="HFg-d0-apM"/>
+                            <constraint firstItem="kqO-Ne-5e0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="I2P-DA-SIK"/>
+                            <constraint firstItem="Jts-68-XFA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="J2y-zI-bgO"/>
+                            <constraint firstItem="lPm-yw-CYV" firstAttribute="top" secondItem="Jts-68-XFA" secondAttribute="bottom" constant="8" id="MiK-gq-8It"/>
+                            <constraint firstItem="Jts-68-XFA" firstAttribute="top" secondItem="Yn7-WQ-SaB" secondAttribute="bottom" constant="8" id="iBQ-pQ-fTa"/>
+                            <constraint firstItem="nVP-s9-VXb" firstAttribute="top" secondItem="I2s-Qx-dD8" secondAttribute="bottom" constant="8" id="kHZ-iY-dKX"/>
+                            <constraint firstItem="dra-7W-xK8" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="l8S-94-0Mk"/>
+                            <constraint firstItem="KMZ-oI-3VV" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="n2Z-a7-fm2"/>
+                            <constraint firstItem="dra-7W-xK8" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="n4O-O0-N6v"/>
+                            <constraint firstItem="Rkq-Ds-42k" firstAttribute="top" secondItem="KMZ-oI-3VV" secondAttribute="bottom" constant="8" id="ppi-ot-F3O"/>
+                            <constraint firstItem="KMZ-oI-3VV" firstAttribute="top" secondItem="lPm-yw-CYV" secondAttribute="bottom" constant="8" id="vr9-9Z-DgD"/>
+                            <constraint firstAttribute="trailing" secondItem="kqO-Ne-5e0" secondAttribute="trailing" constant="16" id="yHR-Jt-aO8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButtonTextField" destination="kqO-Ne-5e0" id="Q3i-op-qcK"/>
+                        <outlet property="okButtonTextField" destination="Jts-68-XFA" id="l9s-0Y-LeC"/>
+                        <outlet property="thirdButtonTextField" destination="KMZ-oI-3VV" id="UXy-ce-xqa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
