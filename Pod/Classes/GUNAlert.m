@@ -100,10 +100,10 @@
 - (void)alertView:(UIAlertView *)alertView
 clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (!self.handlers) {
-        [NSException raise:@"Handlers are undefined." format:@"Tried to call handlers[%ldl] while handlers were undefined", buttonIndex];
+        [NSException raise:@"Handlers are undefined." format:@"Tried to call handlers[%ld] while handlers were undefined", (long)buttonIndex];
     }
     if (buttonIndex > self.handlers.count) {
-        [NSException raise:@"Not enough handlers defined" format:@"Tried to call handlers[%ldl] while handlers.count == %lul", buttonIndex, self.handlers.count];
+        [NSException raise:@"Not enough handlers defined" format:@"Tried to call handlers[%ld] while handlers.count == %lu", (long)buttonIndex, (unsigned long)self.handlers.count];
     }
     void (^handler)(void) = self.handlers[buttonIndex];
     handler();

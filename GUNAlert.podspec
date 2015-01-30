@@ -10,19 +10,16 @@
 Pod::Spec.new do |s|
   s.name             = "GUNAlert"
   s.version          = "0.1.0"
-  s.summary          = "A short description of GUNAlert."
+  s.summary          = "GUNAlert is a simple wrapper around UIAlertView and UIAlertController"
   s.description      = <<-DESC
-                       An optional longer description of GUNAlert
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       For applications that need to keep backward compatibility with iOS versions < 8. It is designed as a simple drop in solution for most common use cases.
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/GUNAlert"
+  s.homepage         = "https://github.com/gunpowderlabs/GUNAlert"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Michał Taszycki" => "michal.taszycki@getbase.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/GUNAlert.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { "Michał Taszycki" => "michal@gunpowderlabs.com" }
+  s.source           = { :git => "https://github.com/gunpowderlabs/GUNAlert.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/mehowte'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
