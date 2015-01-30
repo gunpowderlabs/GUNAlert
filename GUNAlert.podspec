@@ -15,7 +15,6 @@ Pod::Spec.new do |s|
                        For applications that need to keep backward compatibility with iOS versions < 8. It is designed as a simple drop in solution for most common use cases.
                        DESC
   s.homepage         = "https://github.com/gunpowderlabs/GUNAlert"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Michał Taszycki" => "michal@gunpowderlabs.com" }
   s.source           = { :git => "https://github.com/gunpowderlabs/GUNAlert.git", :tag => s.version.to_s }
@@ -31,5 +30,4 @@ Pod::Spec.new do |s|
 
   s.public_header_files = 'Pod/Classes/*.h'
   s.frameworks = 'UIKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
